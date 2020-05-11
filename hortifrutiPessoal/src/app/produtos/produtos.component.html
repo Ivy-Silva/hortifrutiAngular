@@ -1,0 +1,15 @@
+<div class="card" style="width: 18rem;" *ngFor="let produto of listaProdutos">
+
+
+    <div class="card-body" style="text-align: center;">
+      <img src="{{produto.imagem}}" class="card-img-top" alt="Imagem da capa">
+      <h5 class="card-title">{{ produto.nome }}</h5>
+
+      <p class="card-text">Código: {{ produto.id }}</p>
+      <p class="card-text">preço: R{{ produto.preco | currency }}</p>
+      <p class="card-text">Quantidade em estoque: {{ produto.qtdEstoque }}</p>
+      <a href="#" class="btn btn-primary">Comprar</a>
+    </div>
+
+  
+</div>
